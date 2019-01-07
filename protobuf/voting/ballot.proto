@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package voting;
+
+// Ballot represents a ballot casted by an user
+message Ballot {
+    string vote_id = 1;  // ID of a vote
+    string choice = 2;  // code of a candidate in the vote
+    int64 casted_at = 3; // casted time
+    int64 created_at = 15; // created time
+}
